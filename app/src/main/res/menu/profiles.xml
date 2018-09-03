@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/add_profile"
+        app:showAsAction="always" />
+    <item
+        android:id="@id/backup"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/back_up"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/restore"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/restore"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/send"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/send"
+        app:showAsAction="never" />
+</menu>

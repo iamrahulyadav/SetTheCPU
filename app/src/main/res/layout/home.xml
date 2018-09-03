@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.ansoft.speedup.util.WheelView
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:lwvCursorSize="10dp"
+        app:lwvMarkColor="#EEEEEE"
+        app:lwvMarkTextColor="#CACACA"
+        app:lwvMarkTextSize="12sp"
+        app:lwvHighlightColor="@color/colorFAB6"
+        android:background="@android:color/transparent"/>
+    <com.ansoft.speedup.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/wheelview"
+        android:layout_marginBottom="5dp"
+        android:layout_height="150dp"/>
+
+
+
+    <com.ansoft.speedup.util.WheelView
+        android:id="@+id/wheelview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:lwvHighlightColor="@color/colorFAB7"
+        app:lwvCursorSize="10dp"
+        app:lwvMarkColor="#EEEEEE"
+        app:lwvMarkTextColor="#CACACA"
+        app:lwvMarkTextSize="12sp"
+        android:layout_below="@+id/arc_progress"
+        android:background="@android:color/transparent"/>
+
+
+
+
+    <CheckBox
+        android:id="@id/checkBoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10.0dip"
+        android:text="@string/set_on_boot" />
+
+    <include
+        layout="@layout/fab_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

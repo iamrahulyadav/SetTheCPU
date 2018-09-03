@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/warningText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:textSize="24.0dip" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/editLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@id/checkAdvancedBoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Set on Boot"
+                android:textSize="24.0dip" />
+
+            <View
+                android:id="@id/divide"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_below="@id/checkAdvancedBoot"
+                android:layout_marginBottom="10.0dip"
+                android:background="#ff313131" />
+
+            <TextView
+                android:id="@id/sampling_rate_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/divide"
+                android:text="Sampling Rate"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/sampling_rate"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/divide"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@id/up_threshold_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/sampling_rate"
+                android:text="Up Threshold (1%-100%)"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/up_threshold"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/sampling_rate"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@id/down_threshold_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/up_threshold"
+                android:text="Down Threshold (1%-100%)"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/down_threshold"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/up_threshold"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@id/ignore_nice_load_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/down_threshold"
+                android:text="Ignore Nice Load (0/1)"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/ignore_nice_load"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/down_threshold"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@id/powersave_bias_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/ignore_nice_load"
+                android:text="Powersave Bias (0-1000)"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/powersave_bias"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ignore_nice_load"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@id/freq_step_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/powersave_bias"
+                android:text="Freq Step (0%-100%)"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/freq_step"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/powersave_bias"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@id/min_sample_rate_text"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/freq_step"
+                android:text="Min Sample Rate (default 50000 µs)"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/min_sample_rate"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/freq_step"
+                android:layout_marginRight="5.0dip"
+                android:inputType="number"
+                android:text="N/A" />
+
+            <Button
+                android:id="@id/advancedApply"
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/min_sample_rate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:text="Apply" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

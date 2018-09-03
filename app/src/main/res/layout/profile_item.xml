@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/profileEnableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1"
+        android:background="@drawable/list_selector_holo_dark"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@id/profileEnable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text=" " />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/profileRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:clickable="true"
+        android:longClickable="true">
+
+        <TextView
+            android:id="@id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="Screen Off"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@id/profilePriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/profileGovernor"
+            android:paddingLeft="7.0dip"
+            android:text="Priority: 0"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@id/profileMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5.0dip"
+            android:text="1267 max"
+            android:textSize="15.0dip"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@id/profileMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/profileMax"
+            android:paddingRight="5.0dip"
+            android:text="245 min"
+            android:textSize="15.0dip"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@id/profileGovernor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/profileMin"
+            android:paddingRight="5.0dip"
+            android:text="ondemand"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/overflowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1"
+        android:background="@drawable/list_selector_holo_dark"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_menu_moreoverflow_normal_holo_dark" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/voltageList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/separatorView"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:longClickable="true"
+        android:overScrollMode="ifContentScrolls" />
+
+    <View
+        android:id="@id/separatorView"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_above="@id/bottomActionBar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/bottomActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abs__action_bar_default_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@id/voltageSetOnBoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1.0"
+            android:text="@string/set_on_boot" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="35.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/full_name"
+        android:textSize="25.0dip" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8.0dip">
+
+
+
+            <Button
+                android:id="@id/autoChoose"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_autodetect" />
+
+            <Button
+                android:id="@id/override"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/show_other" />
+
+            <Button
+                android:id="@id/tegra2Choose"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:text="Nvidia Tegra 2 T20/AP20H" />
+
+            <Button
+                android:id="@id/customChoose"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:text="Custom Frequencies\nReads from:\n/sdcard/SpeedUp.txt\n/system/sd/SpeedUp.txt\n/data/local/SpeedUp\nSort speeds in kHz, separated by comma,\nfrom lowest to highest." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

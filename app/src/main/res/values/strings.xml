@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+    <string name="turn_profiles_on">Enable preset</string>
+    <string name="conditions">Conditions</string>
+    <string name="actions">Actions</string>
+
+    <string name="safemode_warn">"When undervolting or overclocking, your phone may become unstable and crash.
+
+This is normal, but if Set on Boot is checked or profiles are set to unstable settings, your device might not boot properly.
+
+The button below extracts an update.zip to your storage that toggles Safe Mode for SetCPU, which prevents SetCPU from applying any boot settings. Flash this update from recovery mode if SetCPU is preventing your phone from booting. Flash it again to enable SetCPU to apply boot settings again.
+
+You can also create a file called SpeedUp_safemode on your storage, /data, or /data/local to prevent SetCPU from applying boot settings."</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6411454661913949/6964065514</string>
+
+    <string name="perflock_disable_warning">"Notice: Since HTC bootloaders can now be unlocked and it is possible to flash a custom kernel with perflock disabled on any HTC phone, this feature is now unsupported.
+
+Perflock is a driver enabled on some HTC kernels, including most stock kernels, that prevents SetCPU from setting frequencies correctly. This beta feature attempts to disable perflock. It works with most HTC-based 2.6.29, 2.6.32.15, 2.6.32.17, 2.6.32.21, and 2.6.35.10 kernels (Android 1.6 - 2.3.x). Only attempt this if you have an HTC phone and know that SetCPU is not setting frequencies correctly. If you get an error or the phone crashes, send the kernel information under System Info as well as your phone model to me so I can add support. Flashing a custom kernel that already has perflock disabled is recommended.
+
+Perflock disabler is not a substitute for root access and needs root access to function."</string>
+    <string name="profile_priority_description">"Priority is the importance of this preset, with 0 being the lowest and 100 being the highest. If more than one preset should turn on, the preset with the highest priority will be set first. presets can't share the same priority, so taken numbers are not shown."</string>
+    <string name="profile_exclusive_description">When this preset turns on, it will prevent presets with lower priorities from turning on, even if their conditions are met.</string>
+    <string name="profile_not_exclusive_description">presets with lower priorities can be on at the same time as this preset, but duplicate actions will not be performed in lower presets.</string>
+
+
+    <string name="copyright">After Root Open Source Licenses\n
+---\n
+Android Open Source Project\n
+---\n
+Android Code\n
+Copyright 2005-2008 The Android Open Source Project\n
+\n
+This product includes software developed as part of\n
+The Android Open Source Project (http://source.android.com).\n
+\n
+---\n
+ AppIntro  Library  \n
+	Copyright 2015 Paolo Rotolo\n
+   Copyright 2016 Maximilian Narr\n
+\n
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+\n
+       http://www.apache.org/licenses/LICENSE-2.0\n
+\n
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+---\n
+\n
+Google Gson \n
+Copyright (C) 2008 Google Inc.\n
+\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+\n
+   http://www.apache.org/licenses/LICENSE-2.0\n
+\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.\n
+\n
+\n
+Copyright (c) 2016 Abinash Neupane\n
+\n
+This software is licensed under the terms of the GNU General Public
+License version 2, as published by the Free Software Foundation, and
+may be copied, distributed, and modified under those terms.
+\n
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</string>
+    <string name="profile_settings">preset Settings</string>
+    <string name="finish">Finish</string>
+    <string name="add_condition">Add Condition</string>
+    <string name="condition_generic">Generic Condition</string>
+    <string name="condition_all">All of these are true…</string>
+    <string name="condition_any">Any of these are true…</string>
+    <string name="condition_none">None of these are true…</string>
+    <string name="condition_charge">Charging State</string>
+    <string name="condition_screen">Screen On/Off</string>
+    <string name="condition_screen_unlocked">Screen Unlocked</string>
+    <string name="condition_battery">Battery Level</string>
+    <string name="condition_battery_temp">Battery Temperature</string>
+    <string name="condition_cpu_temp">CPU Temperature</string>
+    <string name="condition_time">Time Range</string>
+    <string name="condition_date_range">Date Range</string>
+    <string name="condition_dayofweek">Day of Week</string>
+    <string name="condition_call">Call State</string>
+    <string name="condition_app">App</string>
+    <string name="condition_activity">Activity</string>
+    <string name="condition_format_generic">Generic Condition</string>
+    <string name="condition_format_all_root">Turn this preset on when…</string>
+    <string name="condition_format_all">All of the following are true</string>
+    <string name="condition_format_any">Any of the following are true</string>
+    <string name="condition_format_none">None of the following are true</string>
+    <string name="condition_format_charge">Charging %1$s</string>
+    <string name="condition_format_screen">Screen %1$s</string>
+    <string name="condition_format_battery">Battery %1$s %2$d</string>
+    <string name="condition_format_battery_temp">Battery %1$s %2$d °C (%3$d °F)</string>
+    <string name="condition_format_cpu_temp">CPU %1$s %2$d °C (%3$d °F)</string>
+    <string name="condition_format_time">%1$s - %2$s</string>
+    <string name="condition_format_date_range">%1$s - %2$s</string>
+    <string name="condition_format_dayofweek">Days</string>
+    <string name="condition_format_call">%1$s call</string>
+    <string name="condition_format_app">App %1$s</string>
+    <string name="condition_format_activity">Activity %1$s</string>
+    <string name="condition_on">on</string>
+    <string name="condition_off">off</string>
+    <string name="condition_in">In</string>
+    <string name="condition_not_in">Not in</string>
+    <string name="to">to</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="none">None</string>
+    <string name="monday_long">Monday</string>
+    <string name="tuesday_long">Tuesday</string>
+    <string name="wednesday_long">Wednesday</string>
+    <string name="thursday_long">Thursday</string>
+    <string name="friday_long">Friday</string>
+    <string name="saturday_long">Saturday</string>
+    <string name="sunday_long">Sunday</string>
+    <string name="converting_profiles">Converting your presets to the new format…</string>
+    <string name="condition_app_loading">Please wait…</string>
+    <string name="condition_app_type">Choose App Type</string>
+    <string name="condition_app_type_normal">Apps</string>
+    <string name="condition_app_type_launcher">Launcher apps</string>
+    <string name="condition_app_type_activity">Main Activites</string>
+    <string name="profilelist_path">presetlist.json</string>
+    <string name="action_list_header">When this preset turns on…</string>
+    <string name="profile_exclusive">Make this preset exclusive</string>
+    <string name="profile_priority">Priority of this preset</string>
+    <string name="action_set_cpu">Set the CPU speed</string>
+    <string name="action_set_governor">Set the CPU governor</string>
+    <string name="action_set_io_scheduler">Set the I/O scheduler</string>
+    <string name="action_show_notification">Show a notification</string>
+    <string name="action_format_set_cpu">CPU %1$d - %2$d</string>
+    <string name="action_format_set_governor">Governor %1$s</string>
+    <string name="action_format_set_io_scheduler">I/O %1$s</string>
+    <string name="action_format_show_notification">Notification</string>
+    <string name="name_this_profile">Name this preset</string>
+    <string name="notification_persistent">Persistent</string>
+    <string name="notification_icon_text">Notification icon</string>
+    <string name="notification_normal">Normal</string>
+    <string name="notification_battery">Battery</string>
+    <string name="notification_charge">Charging</string>
+    <string name="notification_failsafe">Warning</string>
+    <string name="notification_call">Call</string>
+    <string name="notification_time">Time</string>
+    <string name="no_conditions">No conditions!</string>
+    <string name="no_actions">No actions!</string>
+    <string name="exclusive">Exclusive</string>
+    <string name="not_exclusive">Not exclusive</string>
+    <string name="SpeedUp_profiles">After Root presets</string>
+    <string name="restore_profiles">Restore presets</string>
+    <string name="enter_backup_name">Back up presets</string>
+    <string name="backup_edittext_hint">Backup filename</string>
+    <string name="profiles_invalid_character">Invalid character(s) in preset name. \"/\" cannot be be part of a file name.</string>
+    <string name="profiles_send">Send…</string>
+    <string name="profiles_restored">presets restored.</string>
+    <string name="backed_up_profiles">Backed up presets to</string>
+    <string name="error_profiles_corrupted">Error restoring old presets database. It may be corrupt.</string>
+    <string name="error_backing_up_profiles">Error backing up presets. Check your storage.</string>
+    <string name="json_parse_error">preset syntax error. Could not import.</string>
+    <string name="error_restoring_profiles">Error restoring presets. Check your storage.</string>
+    <string name="kernel">Kernel</string>
+    <string name="discard_warning">Exit without saving?</string>
+    <string name="discard_body">Your preset has not been saved. Exit without saving?</string>
+    <string name="stay">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="app_name">Speed Up</string>
+    <string name="widget_name">After Root</string>
+    <string name="version">version 3.1.2</string>
+    <string name="full_name">After Root 3.1.2</string>
+    <string name="continue_autodetect">"Continue
+Recommended"</string>
+    <string name="show_other">"Custom Setup
+Advanced"</string>
+    <string name="set_on_boot">Set on Boot</string>
+    <string name="set_on_profile">Set with presets</string>
+    <string name="add_profile">Add</string>
+    <string name="back_up">Back Up</string>
+    <string name="restore">Restore</string>
+    <string name="send">Send</string>
+    <string name="cont">Continue</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="new_profile">New preset</string>
+    <string name="edit_profile">Edit preset</string>
+    <string name="copy">Copy</string>
+    <string name="copied">Text copied to clipboard.</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="enable_profiles">Enable</string>
+    <string name="show_notifications">Notifications</string>
+    <string name="backup_error">Error backing up file. Is your storage unmounted?</string>
+    <string name="backed_up_voltages">Backed up voltages to</string>
+    <string name="voltages_restored">Voltages restored.</string>
+    <string name="restore_error_mount">Error restoring file. Is your storage unmounted?</string>
+    <string name="restore_error_notfound">Error restoring file. Source file not found.</string>
+    <string name="mV">mV</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="perflock_pd">Trying to disable perflock…</string>
+    <string name="perflock_success">Success: Perflock appears to be disabled.</string>
+    <string name="perflock_err">Error: Misc exception. Is your kernel incompatible? Please e-mail the developer with a logcat.</string>
+    <string name="perflock_fail">Perflock not found. You do not need to disable perflock.</string>
+    <string name="perflock_cancel">Canceled. Perflock not disabled.</string>
+    <string name="root_text">After Root will now request root. If prompted, make sure \"Remember\" is checked and press \"Allow.\" If you get a black screen or force close after this, press Home and launch After Root again.</string>
+    <string name="root_detect_failed">Root access not detected</string>
+    <string name="root_checkbox">Do not show this message again.</string>
+    <string name="widgetconfig_note">It is highly recommended that you use only one widget at a time.</string>
+    <string name="lowerisfaster">Lower is faster.</string>
+    <string name="nativebenchnote">Lower is faster. Native bench is not affected by JIT or other VM optimizations.</string>
+    <string name="safemode_title">Safe Mode Instructions</string>
+    <string name="extract">Extract zip</string>
+    <string name="unmount_warn_custom">Could not read After Root custom config. Reverting to defaults. Is your storage unmounted from the PC?</string>
+    <string name="unmount_warn_zip">Could not extract zip. Is your storage unmounted from the PC?</string>
+    <string name="custom_warn">Custom frequencies not found or badly formatted. Is your storage unmounted from the PC?</string>
+    <string name="extract_success">Extracted successfully to After Root_safemode_toggle.zip.</string>
+    <string name="perflock_disable">Perflock Disabler</string>
+    <string name="device_selection">Device Selection</string>
+    <string name="copy_to_clipboard">Copy All</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="info_kernel"><b>Kernel</b></string>
+    <string name="info_battery"><b>Battery</b></string>
+    <string name="info_cpu_temp">CPU Temp</string>
+    <string name="info_cpu_temp_sensor">CPU Temp Sensor:</string>
+    <string name="info_detected">Detected</string>
+    <string name="info_cpu"><b>CPU</b></string>
+    <string name="info_time_in_state"><b>Time in State</b></string>
+    <string name="info_memory"><b>Memory</b></string>
+    <string name="benchmark_please_wait">Please wait</string>
+    <string name="benchmark_benchmarking">Benchmarking…</string>
+    <string name="voltage_edit">Voltage</string>
+    <string name="current">current</string>
+    <string name="saved">saved</string>
+    <string name="max">max</string>
+    <string name="min">min</string>
+    <string name="revert">Revert</string>
+    <string name="revert_voltages">Revert Voltages</string>
+    <string name="cancel">Cancel</string>
+    <string name="time_in_state_warning">Time in State information not supported by this kernel or configuration.</string>
+    <string name="speedtimepercent">Freq (KHz)|Time (×10=ms)|%</string>
+    <string name="default_profile">Default preset</string>
+    <string name="tab_main">Main</string>
+    <string name="tab_profiles">presets</string>
+    <string name="tab_governor">Governor</string>
+    <string name="tab_info">Info</string>
+    <string name="tab_about">About</string>
+    <string name="tab_voltages">Voltages</string>
+    <string name="tab_multicore">Multicore</string>
+    <string name="max_slider">MHz max</string>
+    <string name="min_slider">MHz min</string>
+    <string name="governor">governor</string>
+    <string name="scheduler">scheduler</string>
+    <string name="governor_caps">Governor</string>
+    <string name="profile">preset</string>
+    <string name="priority">Priority</string>
+    <string name="megahertz">MHz</string>
+    <string name="market_page">Store Page</string>
+    <string name="stress_test_header">Stress test running…</string>
+    <string name="stress_test_note">Press back to end.</string>
+    <string name="settings">settings</string>
+    <string name="safe_mode_instructions">Safe Mode Instructions</string>
+    <string name="multicore_control">Multicore control (beta)</string>
+    <string name="multicore_control_desc">Enable the experimental multicore control menu (requires restart).</string>
+    <string name="exclusive_access">Exclusive Access (beta)</string>
+    <string name="exclusive_access_desc">"Don't let some other apps control CPU settings."</string>
+    <string name="labs">Labs</string>
+    <string name="about_title">About</string>
+    <string name="about_desc">About After Root</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="done_text">Save</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/profileRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_white"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        >
+
+        <TextView
+            android:id="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="7.0dip"
+            android:paddingTop="5.0dip"
+            android:text="Sampling Rate"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7.0dip"
+            android:paddingTop="5.0dip"
+            android:text="40000"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7.0dip"
+            android:paddingTop="36.0dip"
+            android:text="10000-4294967295"
+            android:textColor="#ff888888"
+            android:textSize="15.0dip" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#F4511E</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="semi_colorPrimary">#40FF5722</color>
+
+    <color name="semi_transparent">#80000000</color>
+    <color name="colorFAB1">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorFAB2">#E040FB</color>
+    <color name="colorFAB3">#FF5722</color>
+    <color name="colorFAB4">#FFEB3B</color>
+    <color name="colorFAB5">#E91E63</color>
+    <color name="colorFAB6">#8BC34A</color>
+    <color name="colorFAB7">#FF9800</color>
+    <color name="colorRoundBg">#e0e0e0</color>
+</resources>

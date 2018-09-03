@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/appbar"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8.0dip">
+
+
+            <Button
+                android:id="@id/autoChoose"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_selector"
+                android:layout_margin="5dp"
+                android:text="@string/continue_autodetect" />
+
+            <Button
+                android:id="@id/override"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_selector"
+                android:layout_margin="5dp"
+                android:text="@string/show_other" />
+
+            <Button
+                android:id="@id/tegra2Choose"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_selector"
+                android:layout_margin="5dp"
+                android:text="Nvidia Tegra 2 T20/AP20H" />
+
+            <Button
+                android:id="@id/customChoose"
+                android:layout_width="300.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_white_selector"
+                android:text="Custom Frequencies\nReads from:\n/sdcard/SpeedUp.txt\n/system/sd/SpeedUp.txt\n/data/local/SpeedUp\nSort speeds in kHz, separated by comma,\nfrom lowest to highest." />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

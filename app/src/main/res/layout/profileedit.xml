@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip">
+
+        <TextView
+            android:id="@id/conditionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="2.0dip"
+            android:paddingTop="10.0dip"
+            android:text="@string/profile"
+            android:textSize="18.0dip" />
+
+        <Spinner
+            android:id="@id/conditionSpinner"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10.0dip" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/paramLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conditionText"
+            android:paddingTop="10.0dip">
+
+            <TextView
+                android:id="@id/paramText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="2.0dip"
+                android:paddingTop="10.0dip"
+                android:text="Battery &lt;"
+                android:textSize="18.0dip" />
+
+            <SeekBar
+                android:id="@id/paramSeek"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:max="100"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="12.0dip"
+                android:progress="50"
+                android:progressDrawable="@drawable/progress_gray"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@id/paramMeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/paramSeek"
+                android:paddingLeft="14.0dip"
+                android:paddingTop="14.0dip"
+                android:shadowRadius="3.0"
+                android:text="50%"
+                android:textSize="18.0dip"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/warningLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paramLayout"
+            android:paddingTop="10.0dip">
+
+            <CheckBox
+                android:id="@id/checkWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audible Warning"
+                android:textSize="18.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/timeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningLayout">
+
+            <TextView
+                android:id="@id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="2.0dip"
+                android:paddingTop="25.0dip"
+                android:text="Time"
+                android:textSize="18.0dip" />
+
+            <Button
+                android:id="@id/timeButton1"
+                android:layout_width="86.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23.0dip"
+                android:layout_toLeftOf="@id/timeHyphen"
+                android:text="00:00"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@id/timeHyphen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:layout_toLeftOf="@id/timeButton2"
+                android:text=" - "
+                android:textSize="18.0dip" />
+
+            <Button
+                android:id="@id/timeButton2"
+                android:layout_width="86.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="23.0dip"
+                android:text="00:00"
+                android:textSize="12.0dip" />
+        </RelativeLayout>
+
+        <com.ansoft.speedup.widget.FreqSliderContainer
+            android:id="@id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeLayout"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginTop="20.0dip">
+
+            <com.ansoft.speedup.widget.TextSlider
+                style="@style/Scroller"
+                android:background="@drawable/textslider_back" />
+
+            <com.ansoft.speedup.widget.TextSlider
+                style="@style/Scroller"
+                android:background="@drawable/textslider_back" />
+        </com.ansoft.speedup.widget.FreqSliderContainer>
+
+        <TextView
+            android:id="@id/governorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/container"
+            android:paddingLeft="2.0dip"
+            android:text="@string/governor_caps"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip" />
+
+        <Spinner
+            android:id="@id/governorSpinner"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/container" />
+
+        <TextView
+            android:id="@id/priorityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/governorText"
+            android:paddingLeft="2.0dip"
+            android:paddingTop="20.0dip"
+            android:text="@string/priority"
+            android:textSize="18.0dip" />
+
+        <SeekBar
+            android:id="@id/prioritySeek"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/governorText"
+            android:max="100"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingTop="22.0dip"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_gray"
+            android:thumb="@drawable/thumb" />
+
+        <TextView
+            android:id="@id/priorityMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/prioritySeek"
+            android:layout_below="@id/governorText"
+            android:paddingLeft="14.0dip"
+            android:paddingTop="24.0dip"
+            android:shadowRadius="3.0"
+            android:text="50"
+            android:textSize="18.0dip"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@id/priorityLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/prioritySeek"
+            android:layout_below="@id/prioritySeek"
+            android:paddingLeft="8.0dip"
+            android:text="Low"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@id/priorityHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/prioritySeek"
+            android:layout_below="@id/prioritySeek"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="5.0dip"
+            android:text="High"
+            android:textSize="12.0dip" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/refreshLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priorityText"
+            android:paddingTop="5.0dip">
+
+            <TextView
+                android:id="@id/refreshText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="2.0dip"
+                android:paddingTop="25.0dip"
+                android:text="Refresh"
+                android:textSize="18.0dip" />
+
+            <Spinner
+                android:id="@id/refreshSpinner"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/otherCheckLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refreshLayout"
+            android:paddingTop="10.0dip">
+
+            <CheckBox
+                android:id="@id/checkOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Settings"
+                android:textSize="24.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/otherLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherCheckLayout"
+            android:layout_marginTop="30.0dip"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@id/checkWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WiFi"
+                android:textSize="24.0dip" />
+
+            <CheckBox
+                android:id="@id/checkBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Bluetooth"
+                android:textSize="24.0dip" />
+
+            <CheckBox
+                android:id="@id/checkSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Sync"
+                android:textSize="24.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

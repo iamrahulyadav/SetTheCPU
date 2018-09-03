@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ansoft.speedup"
+    android:installLocation="internalOnly">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.ansoft.speedup.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ansoft.speedup.IntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <receiver
+            android:name="com.ansoft.speedup.StartupReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:label="startup"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ansoft.speedup.PerflockActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Perflock Disabler"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+
+        <service android:name="com.ansoft.speedup.StartupService" />
+
+        <activity
+            android:name="com.ansoft.speedup.InfoWindowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+
+        <service
+            android:name="com.ansoft.speedup.profiles.ProfilesService"
+            android:process=".ProfilesService" />
+
+        <activity
+            android:name="com.ansoft.speedup.StresstestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name="com.ansoft.speedup.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.ansoft.speedup.AddProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

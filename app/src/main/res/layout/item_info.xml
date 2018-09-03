@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bgImage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_devices" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bgTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:text="CPU"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="#6b4b3e"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

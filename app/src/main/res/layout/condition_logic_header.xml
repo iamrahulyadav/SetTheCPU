@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_white_selector"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/addButton"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="8.0dip"
+                android:singleLine="true"
+                android:text="Hello world!"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/deleteButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_delete_condition" />
+
+            <ImageView
+                android:id="@id/addButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/deleteButton"
+                android:layout_toStartOf="@+id/deleteButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_condition" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

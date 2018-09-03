@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/voltageRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_holo_dark"
+    android:clickable="true"
+    android:longClickable="true">
+
+    <CheckBox
+        android:id="@id/frequencyEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@id/frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frequencyEnable"
+        android:paddingLeft="5.0dip"
+        android:text="1400 MHz"
+        android:textSize="15.0dip" />
+
+    <TextView
+        android:id="@id/currentVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frequency"
+        android:layout_toRightOf="@id/frequencyEnable"
+        android:paddingLeft="5.0dip"
+        android:text="1400 mV current"
+        android:textSize="15.0dip" />
+
+    <TextView
+        android:id="@id/savedVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentVoltage"
+        android:layout_toRightOf="@id/frequencyEnable"
+        android:paddingLeft="5.0dip"
+        android:text="1350 mV saved"
+        android:textSize="15.0dip" />
+
+    <TextView
+        android:id="@id/maxVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="6.0dip"
+        android:text="max 1500 mV"
+        android:textSize="15.0dip" />
+
+    <TextView
+        android:id="@id/currentDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/maxVoltage"
+        android:paddingRight="6.0dip"
+        android:text="- 100 mV"
+        android:textSize="15.0dip" />
+
+    <TextView
+        android:id="@id/savedDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/currentDifference"
+        android:paddingRight="6.0dip"
+        android:text="- 150 mV"
+        android:textSize="15.0dip" />
+</RelativeLayout>

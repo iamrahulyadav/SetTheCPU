@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "312270382864",
+    "firebase_url": "https://speed-up-free.firebaseio.com",
+    "project_id": "speed-up-free",
+    "storage_bucket": "speed-up-free.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312270382864:android:78f85fa9a95bd6d2",
+        "android_client_info": {
+          "package_name": "com.ansoft.speedupfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312270382864-b1q3d85h7t1eifq5v43uv8ip71jre6ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAo3A4pLKMCqXDtCPEV2aurex-SmlD2vQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

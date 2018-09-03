@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_integer_bench"
+            android:title="Integer Bench" />
+        <item
+            android:id="@+id/nav_floating_bench"
+            android:title="Floating Point Bench" />
+        <item
+            android:id="@+id/nav_stress_test"
+            android:title="Stress Test" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/nav_about_me"
+                android:title="About Me" />
+            <item
+                android:id="@+id/nav_open_sources"
+                android:title="License and Copyright" />
+
+
+            <item
+                android:id="@+id/remove_ad"
+                android:title="Remove Ad" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/governerListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:layout_above="@+id/bottomActionBar"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:longClickable="true" />
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/bottomActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abs__action_bar_default_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@id/set_on_boot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/colorFAB3"
+            android:text="@string/set_on_boot" />
+
+        <CheckBox
+            android:id="@id/set_on_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/colorFAB3"
+            android:text="@string/set_on_profile" />
+    </LinearLayout>
+</RelativeLayout>

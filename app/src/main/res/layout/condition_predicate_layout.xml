@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ansoft.speedup.profiles.LogicConditionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/predicate_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="96.0dip"
+    android:padding="6.0dip" />

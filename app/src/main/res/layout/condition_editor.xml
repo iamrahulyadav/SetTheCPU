@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    android:paddingBottom="80dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="left"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/hintTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Select Condition"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.ansoft.speedup.profiles.LogicConditionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@id/baseLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="2.0dip"
+                android:padding="2.0dip" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

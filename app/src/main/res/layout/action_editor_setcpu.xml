@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#efefef"
+    android:orientation="vertical"
+    android:paddingBottom="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="left"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/hintTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Action Editor"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@id/action_set_governor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/action_set_governor" />
+
+            <Spinner
+                android:id="@id/governorSpinner"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <CheckBox
+                android:id="@id/action_set_io_scheduler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_set_io_scheduler" />
+
+            <Spinner
+                android:id="@id/ioSchedulerSpinner"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <CheckBox
+                android:id="@id/action_set_cpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/action_set_cpu" />
+
+            <com.ansoft.speedup.util.WheelView
+                android:id="@+id/wheelview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:lwvCursorSize="10dp"
+                app:lwvMarkColor="#EEEEEE"
+                app:lwvMarkTextColor="#CACACA"
+                app:lwvMarkTextSize="12sp"
+                app:lwvHighlightColor="@color/colorFAB6"
+                android:background="@android:color/transparent"/>
+
+            <com.ansoft.speedup.util.WheelView
+                android:id="@+id/wheelview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:lwvHighlightColor="@color/colorFAB7"
+                app:lwvCursorSize="10dp"
+                app:lwvMarkColor="#EEEEEE"
+                app:lwvMarkTextColor="#CACACA"
+                app:lwvMarkTextSize="12sp"
+                android:layout_below="@+id/arc_progress"
+                android:background="@android:color/transparent"/>
+
+
+            <CheckBox
+                android:id="@id/action_show_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/action_show_notification" />
+
+            <CheckBox
+                android:id="@id/notificationPersistent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.0dip"
+                android:checked="true"
+                android:text="@string/notification_persistent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="24.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/notification_icon_text"
+                android:textSize="16.0dip" />
+
+            <RadioGroup
+                android:id="@id/notificationGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="48.0dip">
+
+                <RadioButton
+                    android:id="@+id/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/notification_normal" />
+
+                <RadioButton
+                    android:id="@id/battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_battery" />
+
+                <RadioButton
+                    android:id="@id/charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_charge" />
+
+                <RadioButton
+                    android:id="@id/failsafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_failsafe" />
+
+                <RadioButton
+                    android:id="@id/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_call" />
+
+                <RadioButton
+                    android:id="@id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_time" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

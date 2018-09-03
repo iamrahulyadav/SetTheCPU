@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/menu_market"
+        android:icon="@drawable/ic_menu_shop_holo_dark"
+        android:title="@string/market_page"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@id/menu_device_selection"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/device_selection" />
+    <item
+        android:id="@id/menu_open_source_licenses"
+        android:title="@string/open_source_licenses"
+        app:showAsAction="never" />
+</menu>

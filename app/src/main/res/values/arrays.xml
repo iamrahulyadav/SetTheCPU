@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="action_list">
+        <item>Nearby</item>
+        <item>Recent</item>
+        <item>Group</item>
+    </string-array>
+    <string-array name="info_title">
+        <item>Device</item>
+        <item>CPU</item>
+        <item>Battery</item>
+        <item>Time in State</item>
+        <item>Memory</item>
+        <item>Integer Bench</item>
+        <item>Floating Point Bench</item>
+        <item>Native Bench</item>
+        <item>Stress Test</item>
+    </string-array>
+    <string-array name="info_desc">
+        <item>Device and Linux kernel info</item>
+        <item>CPU frequency and features</item>
+        <item>Battery level and temperature</item>
+        <item>Time spent at each CPU speed</item>
+        <item>Total and free RAM</item>
+        <item>"Test this device's integer performance"</item>
+        <item>"Test this device's floating point performance"</item>
+        <item>Run a native speed test</item>
+        <item>Stress CPU(s) to test stability</item>
+    </string-array>
+    <string-array name="profile_names">
+        <item>Charging Any</item>
+        <item>Charging AC</item>
+        <item>Charging USB</item>
+        <item>Screen Off</item>
+        <item>Battery &lt;</item>
+        <item>Temp ></item>
+        <item>CPU ></item>
+        <item>Time</item>
+        <item>In Call</item>
+    </string-array>
+    <string-array name="profile_names_no_sensor">
+        <item>Charging Any</item>
+        <item>Charging AC</item>
+        <item>Charging USB</item>
+        <item>Screen Off</item>
+        <item>Battery &lt;</item>
+        <item>Temp ></item>
+        <item>Time</item>
+        <item>In Call</item>
+    </string-array>
+    <string-array name="profile_names_notification">
+        <item>Charging Any/Full Profile</item>
+        <item>Charging AC/Full Profile</item>
+        <item>Charging USB/Full Profile</item>
+        <item>Screen Off Profile</item>
+        <item>Battery Level Profile</item>
+        <item>Temperature Profile</item>
+        <item>CPU Temperature Profile</item>
+        <item>Time Profile</item>
+        <item>In Call Profile</item>
+    </string-array>
+    <string-array name="widget_refresh_interval">
+        <item>Passive</item>
+        <item>10 minutes</item>
+        <item>5 minutes</item>
+        <item>240 seconds</item>
+        <item>120 seconds</item>
+        <item>60 seconds</item>
+        <item>30 seconds</item>
+        <item>15 seconds</item>
+        <item>10 seconds</item>
+        <item>5 seconds</item>
+    </string-array>
+    <string-array name="widget_back_color">
+        <item>Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+        <item>Clear</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="tabs">
+        <item>Main</item>
+        <item>Profiles</item>
+        <item>Voltages</item>
+        <item>Governor</item>
+        <item>Info</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="tabs_no_voltages">
+        <item>Main</item>
+        <item>Profiles</item>
+        <item>Governor</item>
+        <item>Info</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="profiles_long_click">
+        <item>Move priority up</item>
+        <item>Move priority down</item>
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

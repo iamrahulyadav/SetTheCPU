@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.ansoft.speedup.widget.InequalityToggleButton
+        android:id="@id/inequalityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6.0dip" />
+
+    <com.ansoft.speedup.widget.NumberSliderContainer
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inequalityButton">
+
+        <com.ansoft.speedup.widget.TextSlider
+            style="@style/Scroller"
+            android:background="@drawable/textslider_back" />
+   </com.ansoft.speedup.widget.NumberSliderContainer>
+</RelativeLayout>

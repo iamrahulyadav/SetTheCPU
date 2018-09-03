@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/actionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@id/fragmentContainer"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/actionBar"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/separatorView" />
+
+    <View
+        android:id="@id/separatorView"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_above="@id/bottomActionBar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/bottomActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abs__action_bar_default_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/abs__action_bar_default_height"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector_holo_dark"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_nav_prev" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="#ff494a4a" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/abs__action_bar_default_height"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector_holo_dark"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textSize="18.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_nav_next" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

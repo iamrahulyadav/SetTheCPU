@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="left"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_white">
+
+        <com.ansoft.speedup.util.SmoothCheckBox
+            android:id="@id/profileEnable"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/myCheckBox"
+            android:checked="false" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/profileRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.9"
+            android:clickable="true"
+            android:gravity="left"
+            android:longClickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An Example Profile"
+                android:textSize="14.0dip"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/profileConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8.0dip"
+                android:textColor="@color/colorFAB3"
+                android:text="Screen Off, Battery &lt; 100%, Any(App Maps, App Navigation), None(Screen On)"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@id/profileActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8.0dip"
+                android:text="CPU 1200 - 350, Governor interactive"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@id/profileOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority 100, Exclusive"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_menn" />
+
+    </LinearLayout>
+</LinearLayout>
